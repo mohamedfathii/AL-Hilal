@@ -113,9 +113,18 @@ body {
   background-color: #682b87;
   padding: 0;
 }
-.navbar-brand img {
+.navbar-brand {
   width: 109px;
   height: 90px;
+}
+@media (max-width: 992px) {
+  .navbar-brand {
+    width: 55px;
+  }
+}
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -388,7 +397,6 @@ body {
 .latest-news {
   background: url('./../assets/images/bg/bg.png');
   background-repeat: no-repeat;
-  /* background-size: calc(100% + 3px) 100%; */
   background-size: cover;
   background-position: top;
   position: relative;
@@ -397,11 +405,20 @@ body {
 .latest-news .owl-carousel,
 .owl-carousel .owl-item {
   position: static;
+  text-align: center;
 }
 .latest-news .owl-theme .owl-nav {
   position: absolute;
   top: 60px;
   right: 140px;
+}
+@media (max-width: 992px) {
+  .latest-news .owl-theme .owl-nav {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 .news-card {
   display: inline-block;
@@ -456,13 +473,13 @@ body {
 .landing-contact-us {
   background-color: rgb(61, 21, 104);
   width: 100%;
-  height: 100%;
   padding: 60px 0;
 }
 
 .landing-contact-us__container {
   display: flex;
   justify-content: center;
+  margin: 15px;
 }
 .landing-contact-us-nav {
   display: flex;
@@ -500,7 +517,7 @@ body {
 }
 .tab-content {
   background-color: rgb(255, 255, 255);
-  padding: 30px 65px 55px 50px;
+  padding: 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -534,6 +551,16 @@ select {
   border: none;
   font-size: 14px;
   margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+  .landing-contact-us-nav {
+    flex-direction: row;
+  }
+  #v-visit-tab {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
 }
 /*** 10.0 - Footer ***/
 footer {
@@ -775,7 +802,7 @@ textarea {
   display: none;
 }
 .gallery {
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .gallery h1 {
   font-size: 27px;
@@ -923,6 +950,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /*** 15.0 - News ***/
@@ -936,7 +964,7 @@ td {
   font-size: 14px;
 }
 .news {
-  padding: 40px 0;
+  padding-top: 40px;
 }
 .news h1 {
   font-size: 27px;
