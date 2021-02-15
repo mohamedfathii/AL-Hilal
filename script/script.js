@@ -62,17 +62,3 @@ function sliders() {
       },
     })
 }
-// $(window).on('load', function () {
-//   document.body.scrollTop = 0
-//   $('body').append(
-//     '<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>'
-//   )
-//   $('body').css('overflow', 'hidden')
-//   setTimeout(removeLoader, 2000)
-// })
-// function removeLoader() {
-//   $('body').css('overflow', 'auto')
-//   $('#loadingDiv').fadeOut(500, function () {
-//     $('#loadingDiv').remove()
-//   })
-// }

@@ -317,10 +317,6 @@ body {
 
 /*** 7.0 - academy players ***/
 .academy-players {
-  /* background: url(/assets/images/bg/group-12.png);
-  background-repeat: no-repeat;
-  background-size: 120%;
-  background-position: top; */
   background-color: rgb(61, 21, 104);
   padding: 60px 0;
 }
@@ -331,15 +327,15 @@ body {
   justify-content: center;
 }
 .player-card__item {
-  margin: 33px;
+  margin: 17px;
   width: 155px;
-  border-top-right-radius: 30px;
-  background-color: rgb(255, 255, 255);
 }
 .player-card__container {
   position: relative;
   display: flex;
   justify-content: center;
+  border-top-right-radius: 30px;
+  background-color: rgb(255, 255, 255);
 }
 .aside_item_1 {
   position: absolute;
@@ -354,12 +350,15 @@ body {
   font-weight: bold;
 }
 .player__img {
-  background: url('./../assets/images/CR.png');
-  background-repeat: no-repeat;
+  /* background: url('./../assets/images/CR.png'); */
+  /* background-repeat: no-repeat; */
   width: 155px;
   height: 180px;
-  background-size: 120%;
-  background-position: top;
+  /* background-size: 120%; */
+  /* background-position: top; */
+}
+.player__img img {
+  border-top-right-radius: 30px;
 }
 .aside_item_2 {
   top: 30px;
